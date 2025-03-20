@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-6">
+    <h1 class="text-3xl font-bold mb-4">Pokédex</h1>
+    <div class="flex gap-2 mb-4">
+        <input id="pokemonInput" type="text" placeholder="Ingrese el nombre"
+            class="border border-gray-300 p-2 rounded">
+        <button onclick="fetchPokemon()" class="bg-blue-500 text-white px-4 py-2 rounded">Buscar</button>
+    </div>
+    <div id="pokemonCard" class="hidden bg-white p-6 rounded-lg shadow-lg text-center w-80">
+        <img id="pokemonImage" class="mx-auto w-32 h-32">
+        <h2 id="pokemonName" class="text-xl font-bold capitalize"></h2>
+        <p><strong>Habilidades:</strong> <span id="pokemonAbilities"></span></p>
+    </div>
+    <p id="errorMessage" class="text-red-500 mt-4 hidden"></p>
+
+    <script src="Ejercicio3.js"></script>
+</body>
+</html>
